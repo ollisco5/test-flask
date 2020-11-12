@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/page2" method="post" name="fisk">
+    <input type="hidden" value="{{timefunc()}}" name="start">
+    <input type="hidden" value="{{timefunc()-start}}" name="total">
+    <input type="hidden" value="{{index}}" name="index">
+    <input type="submit">
+</form>
+</body>
+<script>window.onload = function(){
+  document.forms[0].submit();
+}</script>
+</html>
